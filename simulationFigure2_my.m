@@ -1,8 +1,5 @@
-% This Matlab script generates Figure 2 in the paper:
-%
-% Emil Bjornson, Luca Sanguinetti, “Power Scaling Laws and Near-Field
-% Behaviors of Massive MIMO and Intelligent Reflecting Surfaces,” IEEE Open
-% Journal of the Communications Society, to appear.
+% This Matlab script generates Figure 2 in the paper: Emil Bjornson, Luca Sanguinetti, “Power Scaling Laws and Near-Field
+% Behaviors of Massive MIMO and Intelligent Reflecting Surfaces,” IEEE Open Journal of the Communications Society, to appear.
 %
 % Download article: https://arxiv.org/pdf/2002.04960
 %
@@ -11,11 +8,7 @@
 % License: This code is licensed under the GPLv2 license. If you in any way
 % use this code for research that results in publications, please cite our
 % paper as described above.
-
-
-close all;
-clear all;
-
+close all; clear all;
 %Wavelength
 lambda = 0.1;
 
@@ -44,7 +37,7 @@ PrxPtx_thumb = (N_thumb*beta_d)./(3*(N_thumb*beta_d*pi+1).*sqrt(2*N_thumb*beta_d
 
 
 %% Plot the simulation results
-figure;fontsize =22;
+figure;fontsize = 25;
 hold on; box on;
 plot(N,PrxPtx_approx,'b--','LineWidth',2);
 plot(N,PrxPtx_exact,'r','LineWidth',2);

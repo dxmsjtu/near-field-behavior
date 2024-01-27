@@ -14,7 +14,7 @@
 
 
 close all;
-clear all;
+clear;
 
 %Wavelength
 lambda = 0.1;
@@ -54,5 +54,5 @@ set(gca,'YScale','log');
 xlabel('Number of receive antennas ($N$)','Interpreter','Latex');
 ylabel('Total channel gain','Interpreter','Latex');
 legend({'Approximation','Exact'},'Interpreter','Latex','Location','NorthWest');
-set(gca,'fontsize',fontsize);
+set(gca,'fontsize',18);
 ylim([1e-6 1]);
